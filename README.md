@@ -22,3 +22,8 @@ Configure user
 sudo htpasswd -c /etc/squid/passwords username_your_choice
 ```
 
+Open port and run
+```
+sudo ufw allow 3128/tcp
+sudo systemctl restart squid.service
+```
